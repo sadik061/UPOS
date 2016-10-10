@@ -1,8 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane fx:id="tabpane" layoutX="5.0" layoutY="4.0" prefHeight="392.0" prefWidth="592.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="home" text="Home">
+            <content>
+              <AnchorPane fx:id="homepane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="175.0" layoutY="116.0" mnemonicParsing="false" onAction="#gotoTab" text="Button" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="view" text="View">
+            <content>
+              <AnchorPane fx:id="viewpane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -18,8 +18,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Process process = Runtime.getRuntime().exec("C:\\xampp\\xampp_start.exe");
-        Process process1 = Runtime.getRuntime().exec("C:\\xampp\\mysql\\bin\\mysqld.exe");
+       // Process process = Runtime.getRuntime().exec("C:\\xampp\\xampp_start.exe");
+       // Process process1 = Runtime.getRuntime().exec("C:\\xampp\\mysql\\bin\\mysqld.exe");
         window= primaryStage;
         window.setTitle("ZAM ZAM SUPER SHOP");
         window.setScene(new Scene(root, 300, 275));
