@@ -8,9 +8,10 @@
    <children>
       <TextField fx:id="productquantity" layoutX="33.0" layoutY="268.0" promptText="Product Quantity" />
       <Button fx:id="add" layoutX="80.0" layoutY="336.0" mnemonicParsing="false" text="Add" />
-      <Button fx:id="barcode" layoutX="235.0" layoutY="207.0" mnemonicParsing="false" text="BarCode" />
+      <Button fx:id="barcode" layoutX="235.0" layoutY="207.0" mnemonicParsing="false" onAction="#scanBarCode" text="BarCode" />
       <TextField fx:id="productcode" layoutX="33.0" layoutY="207.0" promptText="Product Code" />
       <TextField fx:id="productprice" layoutX="33.0" layoutY="137.0" promptText="Product Price" />
       <TextField fx:id="productname" layoutX="33.0" layoutY="80.0" promptText="Product Name" />
+      <Button fx:id="generate" layoutX="355.0" layoutY="207.0" mnemonicParsing="false" onAction="#generateBarCode" text="Generate" />
    </children>
 </AnchorPane>
