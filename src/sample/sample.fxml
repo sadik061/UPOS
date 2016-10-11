@@ -14,36 +14,39 @@
         <tabs>
           <Tab fx:id="home" text="Home">
             <content>
-              <AnchorPane fx:id="homepane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Button layoutX="175.0" layoutY="116.0" mnemonicParsing="false" onAction="#gotoTab" text="Button" />
-                     </children>
-                  </AnchorPane>
+                <fx:include source="Home.fxml" />
+              <AnchorPane fx:id="homepane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
           </Tab>
           <Tab fx:id="view" text="View">
             <content>
+                <fx:include source="View.fxml" />
               <AnchorPane fx:id="viewpane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
           </Tab>
             <Tab fx:id="transiction" text="Transiction">
               <content>
+                  <fx:include source="Transiction.fxml" />
                 <AnchorPane fx:id="transictionpane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
               </content>
             </Tab>
             <Tab fx:id="report" text="Report">
               <content>
+                  <fx:include source="Report.fxml" />
                 <AnchorPane fx:id="reportpane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
               </content>
             </Tab>
             <Tab fx:id="products" text="Products">
               <content>
+                  <fx:include source="Products.fxml" />
                 <AnchorPane fx:id="productspane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
               </content>
             </Tab>
             <Tab fx:id="addproducts" text="Add Products">
               <content>
-                <AnchorPane fx:id="addproductspane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  <fx:include source="AddProducts.fxml" />
+                <AnchorPane fx:id="addproductspane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    </AnchorPane>
               </content>
             </Tab>
         </tabs>
