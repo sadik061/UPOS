@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="barbecue-1.5-beta1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/barbecue-1.5-beta1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
