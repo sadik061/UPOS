@@ -1,21 +1,21 @@
 package BarCode;
 
-import javax.swing.*;
-import net.sourceforge.barbecue.BarcodeFactory;
 import net.sourceforge.barbecue.Barcode;
 import net.sourceforge.barbecue.BarcodeException;
+import net.sourceforge.barbecue.BarcodeFactory;
 import net.sourceforge.barbecue.BarcodeImageHandler;
 import net.sourceforge.barbecue.output.OutputException;
 
-import java.awt.image.BufferedImage;
+import javax.swing.*;
 import java.awt.*;
-import java.io.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 
 public class Example
 {
-    private int BarNumber;
-    public Example(int BarNumber)
+    private String BarNumber;
+    public Example(String  BarNumber)
     {
         this.BarNumber=BarNumber;
     }
@@ -25,7 +25,7 @@ public class Example
 		// Always get a Barcode from the BarcodeFactory
         Barcode barcode = null;
         try {
-            barcode = BarcodeFactory.createCode128B(String.valueOf(BarNumber));
+            barcode = BarcodeFactory.createCode128B(BarNumber);
         } catch (BarcodeException e) {
             // Error handling
         }
@@ -39,7 +39,7 @@ public class Example
 
 	public void drawingBarcodeDirectToGraphics() throws BarcodeException, OutputException {
 		// Always get a Barcode from the BarcodeFactory
-		Barcode barcode = BarcodeFactory.createCode128B(String.valueOf(BarNumber));
+		Barcode barcode = BarcodeFactory.createCode128B(BarNumber);
 
 		// We are created an image from scratch here, but for printing in Java, your
 		// print renderer should have a Graphics internally anyway

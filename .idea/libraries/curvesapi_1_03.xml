@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="curvesapi-1.03">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/excellib/curvesapi-1.03.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

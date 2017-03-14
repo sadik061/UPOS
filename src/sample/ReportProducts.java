@@ -1,6 +1,5 @@
 package sample;
 
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 /**
@@ -8,30 +7,35 @@ import javafx.beans.property.SimpleStringProperty;
  */
 public class ReportProducts
 {
-    private final SimpleIntegerProperty ProductId;
+    private final SimpleStringProperty ProductId;
     private final SimpleStringProperty ProductName;
     private final SimpleStringProperty ProductQuantity;
     private final SimpleStringProperty ProductBarCode;
-    private final SimpleIntegerProperty PerProductPrice;
+    private final SimpleStringProperty PerProductPrice;
+    private final SimpleStringProperty TotalPrice;
 
 
-    public ReportProducts(int productId, String productName, String productQuantity, String productBarCode, int perProductPrice) {
-        ProductId = new SimpleIntegerProperty(productId);
+
+
+    public ReportProducts(String productId, String productName, String productQuantity, String productBarCode, String perProductPrice, String totalPrice) {
+        ProductId = new SimpleStringProperty(productId);
         ProductName = new SimpleStringProperty(productName);
         ProductQuantity = new SimpleStringProperty(productQuantity);
         ProductBarCode = new SimpleStringProperty(productBarCode);
-        PerProductPrice = new SimpleIntegerProperty(perProductPrice);
+        PerProductPrice = new SimpleStringProperty(perProductPrice);
+        TotalPrice =  new SimpleStringProperty(totalPrice);
+
     }
 
-    public int getProductId() {
+    public String getProductId() {
         return ProductId.get();
     }
 
-    public SimpleIntegerProperty productIdProperty() {
+    public SimpleStringProperty productIdProperty() {
         return ProductId;
     }
 
-    public void setProductId(int productId) {
+    public void setProductId(String productId) {
         this.ProductId.set(productId);
     }
 
@@ -71,15 +75,26 @@ public class ReportProducts
         this.ProductBarCode.set(productBarCode);
     }
 
-    public int getPerProductPrice() {
+    public String getPerProductPrice() {
         return PerProductPrice.get();
     }
 
-    public SimpleIntegerProperty perProductPriceProperty() {
+    public SimpleStringProperty perProductPriceProperty() {
         return PerProductPrice;
     }
 
-    public void setPerProductPrice(int perProductPrice) {
+    public void setPerProductPrice(String perProductPrice) {
         this.PerProductPrice.set(perProductPrice);
+    }
+    public String getTotalPrice() {
+        return TotalPrice.get();
+    }
+
+    public SimpleStringProperty totalPriceProperty() {
+        return TotalPrice;
+    }
+
+    public void setTotalPrice(String totalPrice) {
+        this.TotalPrice.set(totalPrice);
     }
 }

@@ -4,7 +4,7 @@ package sample;
  * Created by abdullah on 10/11/16.
  */
 
-import DataBase.DataBase;
+import Data.DataBase;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -24,12 +24,12 @@ public class ReportCotroller
     private static ObservableList<ReportProducts> products = FXCollections.observableArrayList();
 
     @FXML
-    private TableView producttable;
+    private TableView reporttable;
     @FXML
     public void initialize()
     {
         products.clear();
-        producttable.setPrefSize(screenWidth,screenHeight);
+        reporttable.setPrefSize(screenWidth,screenHeight);
 
         DataBase db=new DataBase();
         db.DBConnect();
@@ -50,9 +50,12 @@ public class ReportCotroller
         TableColumn<ReportProducts, String> price = new TableColumn<>("Per Product Price");
         price.setCellValueFactory(new PropertyValueFactory<ReportProducts, String>("PerProductPrice"));
 
+        TableColumn<ReportProducts, String> Totalprice = new TableColumn<>("Total Price");
+        price.setCellValueFactory(new PropertyValueFactory<ReportProducts, String>("TotalPrice"));
 
-        producttable.setItems(products);
-        producttable.getColumns().addAll(number,name,quantity,barcode,price);
+
+        reporttable.setItems(products);
+        reporttable.getColumns().addAll(number,name,quantity,barcode,price,Totalprice);
 
     }
     public void AddintoList(ReportProducts or)

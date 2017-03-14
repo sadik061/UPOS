@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="commons-codec-1.101">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/excellib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/curvesapi-1.03.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/poi-3.14-20160307.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/poi-examples-3.14-20160307.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/poi-excelant-3.14-20160307.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/poi-ooxml-3.14-20160307.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/poi-ooxml-schemas-3.14-20160307.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/xmlbeans-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/excellib/poi-scratchpad-3.14-20160307.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
